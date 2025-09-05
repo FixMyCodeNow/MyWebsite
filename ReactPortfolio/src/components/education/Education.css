@@ -1,0 +1,114 @@
+/* Section */
+.education-section {
+  padding: 6rem 12vw;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #000000, #0d1b1e);
+  color: #e0f7fa;
+}
+
+.education-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.education-title h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.title-underline {
+  width: 8rem;
+  height: 4px;
+  background-color: #00ffff;
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.education-title p {
+  margin-top: 1rem;
+  color: #b0f7f9;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Grid Layout */
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* Card */
+.education-card {
+  background-color: #0a0f0f;
+  border: 1px solid #00ffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo-container {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.school-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00ffff;
+}
+
+.school-info h4 {
+  font-size: 1rem;
+  color: #8ed7d9;
+}
+
+.school-info .date {
+  font-size: 0.9rem;
+  color: #6be6e9;
+  margin-top: 0.25rem;
+}
+
+.education-card .grade {
+  margin-top: 0.5rem;
+  color: #00ffaa;
+  font-weight: bold;
+}
+
+.education-card .desc {
+  margin-top: 0.5rem;
+  color: #b0f7f9;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

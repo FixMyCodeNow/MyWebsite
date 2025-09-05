@@ -1,0 +1,88 @@
+.footer {
+  background-color: #0d1117; /* sama kayak contact */
+  color: #e2e8f0; /* teks utama abu terang */
+  padding: 2rem 12vw;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 2rem 7vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 2rem 20vw;
+  }
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Logo / Nama */
+.footer-logo {
+  font-size: 1.25rem; 
+  font-weight: 600;
+  background: linear-gradient(to right, #00f5d4, #00c9a7); /* aqua gradasi */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navigation links */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer-link {
+  font-size: 0.875rem;
+  margin: 0.25rem 0;
+  background: none;
+  border: none;
+  color: #e2e8f0; /* default abu terang */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #00f5d4; /* hover aqua */
+}
+
+@media (min-width: 640px) {
+  .footer-link {
+    font-size: 1rem;
+  }
+}
+
+/* Social icons */
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer-icon {
+  font-size: 1.25rem;
+  color: #e2e8f0; /* default abu terang */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #00f5d4; /* hover aqua */
+  transform: scale(1.1);
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.875rem;
+  color: #9ca3af; /* abu-abu soft */
+  margin-top: 1.5rem;
+}

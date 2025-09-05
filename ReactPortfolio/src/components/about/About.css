@@ -1,0 +1,201 @@
+/* Section wrapper */
+.section {
+  padding: 1rem 7vw;
+  font-family: sans-serif;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    margin-top: 6rem;
+    padding: 1rem 7vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    margin-top: 8rem;
+    padding: 1rem 20vw;
+  }
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Left Side */
+.left {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .left {
+    width: 50%;
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+/* Greeting */
+.greeting {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .greeting {
+    font-size: 2.25rem; /* 4xl */
+  }
+}
+
+@media (min-width: 768px) {
+  .greeting {
+    font-size: 3rem; /* 5xl */
+  }
+}
+
+/* Name */
+.name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .name {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .name {
+    font-size: 3.75rem;
+  }
+}
+
+/* Skills with typing effect */
+.skills {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+@media (min-width: 640px) {
+  .skills {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills {
+    font-size: 1.875rem;
+  }
+}
+
+.textWhite {
+  color: black;
+}
+
+.cursor {
+  color: #00FFFF;
+}
+
+/* About text */
+.aboutText {
+  font-size: 1rem;
+  color: black; /* gray-400 */
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media (min-width: 640px) {
+  .aboutText {
+    font-size: 1.125rem;
+  }
+}
+
+/* CV Button */
+.cvButton {
+  display: inline-block;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  background: linear-gradient(90deg, #00FFFF, #38bdf8);
+  box-shadow: 0 0 2px #00FFFF, 0 0 2px #00FFFF, 0 0 40px #00FFFF;
+}
+
+.cvButton:hover {
+  transform: scale(1.05);
+}
+
+/* Right Side */
+.right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .right {
+    width: 50%;
+    justify-content: flex-end;
+    transform: translateX(50px);
+  }
+}
+
+/* Tilt wrapper */
+.tiltWrapper {
+  width: 12rem;
+  height: 12rem;
+  border: 4px solid #22d3ee; /* cyan-400 */
+  border-radius: 9999px;
+}
+
+@media (min-width: 640px) {
+  .tiltWrapper {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .tiltWrapper {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+/* Profile image */
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.5);
+}
